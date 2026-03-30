@@ -24,6 +24,7 @@ public class Main {
         inFile.fileClose();
 
         // This is a Test
+        // Second Test
 
         FileInput indata = new FileInput("animals.txt");
         String line;
