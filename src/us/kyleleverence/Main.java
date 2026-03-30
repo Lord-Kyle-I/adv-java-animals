@@ -1,4 +1,4 @@
-package us.mattgreen;
+package us.kyleleverence;
 
 import java.util.ArrayList;
 
@@ -22,6 +22,8 @@ public class Main {
         outFile.fileClose();
         inFile.fileRead();
         inFile.fileClose();
+
+        // This is a Test
 
         FileInput indata = new FileInput("animals.txt");
         String line;
