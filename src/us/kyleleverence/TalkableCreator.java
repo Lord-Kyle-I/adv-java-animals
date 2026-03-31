@@ -45,7 +45,7 @@ public class TalkableCreator {
     private Dog createDog(String name) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter yes if that dog is loyal.");
-        return new Dog(input.nextLine() == "yes", name);
+        return new Dog(input.nextLine().equalsIgnoreCase("yes"), name);
     }
 
     private Teacher createTeacher(String name) {
