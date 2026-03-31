@@ -1,3 +1,8 @@
+// Kyle Leverence
+// 03/30/26
+// Software Architecture
+// Matt Green
+
 package us.kyleleverence;
 
 import java.util.ArrayList;
@@ -11,20 +16,19 @@ public class Main {
         ArrayList<Talkable> zoo = new ArrayList<>();
 
         // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
+        TalkableCreator creator = new TalkableCreator();
+        creator.createTalkable(zoo);
         // End Lines to Replace
 
         for (Talkable thing : zoo) {
             printOut(thing);
         }
+
         outFile.fileClose();
         inFile.fileRead();
         inFile.fileClose();
 
-        // This is a Test
-        // Second Test
+
 
         FileInput indata = new FileInput("animals.txt");
         String line;
